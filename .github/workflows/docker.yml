@@ -16,8 +16,9 @@ jobs:
       - shell: bash
         env:
           SUPER_SECRET: ${{ secrets.DOCKERHUUB_TEST }}
+          FIRST_NAME: Mona
         run: |
-          echo $SUPER_SECRET      
+          echo $FIRST_NAME $SUPER_SECRET      
       -
         name: Login to DockerHub
         uses: docker/login-action@v1
